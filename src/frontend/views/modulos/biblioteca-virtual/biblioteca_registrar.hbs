@@ -1,0 +1,204 @@
+
+
+
+
+<!--quitar -->
+<div class="card">
+  <div class="card-header">Registro de Libros</div>
+  <div class="card-body">
+    <!--quitar -->
+    <!--inicio pagina registrar Libros-->
+
+    <!-- general form elements -->
+    <div class="card card-primary">
+      <div class="card-header">
+        <h3 class="card-title">Ingresar datos del libro</h3>
+      </div>
+      <!-- /.card-header -->
+
+      <!-- form start -->
+      <form class="formulario" id="formulario">
+
+
+        <!-- Grupo de Isbn -->
+        <div class="form__group" id="grupo__isbn">
+          <label for="isbn" class="formulario__label">ISBN</label>
+          <div class="formulario__grupo-input">
+            <input type="text" class="formulario__input" id="isbn" name="isbn" placeholder="Ingrese ISBN" maxlength="13">
+            <i class="formulario__validacion-estado  fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">El isbn solo puede tener numeros, sin espacio > a 10 digitos, no mas de 13
+          </p>
+        </div>
+
+        <!-- Grupo de Titulo -->
+        <div class="form__group" id="grupo__titulo">
+          <label for="titulo" class="formulario__label">Titulo</label>
+          <div class="formulario__grupo-input">
+            <input type="text" class="formulario__input" id="titulo" name="titulo"
+              placeholder="Ingrese Titulo del Libro" maxlength="100">
+            <i class="formulario__validacion-estado  fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">Solo puede ingresar letras, espacio</p>
+        </div>
+
+        <!-- Grupo de Edicion -->
+        <div class="form__group" id="grupo__edicion">
+          <label for="edicion" class="formulario__label">Edición</label>
+          <div class="formulario__grupo-input">
+            <input type="text" class="formulario__input" id="edicion" name="edicion"
+              placeholder="Ingrese edicion del Libro" maxlength="100">
+            <i class="formulario__validacion-estado  fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">Solo se aceptan letras y numeros no caracteres especiales</p>
+        </div>
+
+        <!-- Grupo de Descripcion de Libro -->
+        <div class="form__group" id="grupo__descripcionl">
+          <label for="descripcionl" class="formulario__label">Descripción</label>
+          <div class="formulario__grupo-input">
+            <input type="text" class="formulario__input" id="descripcionl" name="descripcionl"
+              placeholder="Ingrese descripcion del Libro" maxlength="150">
+            <i class="formulario__validacion-estado  fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">Solo se aceptan letras no caracteres especiales</p>
+        </div>
+
+        <!-- Grupo de Idioma -->
+        <div class="form__group" id="grupo__idioma">
+          <label for="idioma" class="formulario__label">Idioma</label>
+          <div class="formulario__grupo-input">
+            <input type="text" class="formulario__input" id="idioma" name="idioma"
+              placeholder="Ingrese Idioma del Libro" maxlength="100">
+            <i class="formulario__validacion-estado  fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">Solo se aceptan letras, no numeros ni caracteres especiales</p>
+        </div>
+
+        <!-- Grupo de img -->
+        <div class="form__group">
+          <label for="img" class="formulario__label">Imagen del libro</label>
+          <input type="file" name="photolibro" id="imgfile" accept="image/*">
+        </div>
+
+        <!-- Grupo de pdf -->
+        <div class="form__group">
+          <label for="pdf" class="formulario__label">Pdf del libro</label>
+          <input type="file" name="pdflibro" id="pfile" accept="application/pdf">
+        </div>
+
+        <!-- Grupo de Editorial -->
+        <div class="form__group" id="grupo__editorial">
+          <label for="editorial" class="formulario__label">Editorial</label>
+          <div class="formulario__grupo-input">
+            <input type="text" class="formulario__input" id="editorial" name="editorial"
+              placeholder="Ingrese Editorial del Libro" maxlength="100">
+            <i class="formulario__validacion-estado  fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">Solo se aceptan letras no caracteres especiales ni numeros</p>
+        </div>
+
+        <!-- Grupo de Categoria -->
+        <div class="form__group">
+          <label class="formulario__label">Categoria de Libro</label>
+          <select id="categoria" class="tama_no">
+            <option value="N/A" selected>Secleccione Categoria</option>
+            <option value="Informatica">Informatica</option>
+            <option value="Programación">Programación</option>
+            <option value="Programación">Diseño</option>
+            <option value="Programación">Desarrollo Web</option>
+          </select>
+        </div>
+
+        <!-- Grupo de Descripcion de Categoria -->
+        <div class="form__group" id="grupo__descripcionc">
+          <label for="descripcionc" class="formulario__label">Descripción de Categoria</label>
+          <div class="formulario__grupo-input">
+            <input type="text" class="formulario__input" id="descripcionc" name="descripcionc"
+              placeholder="Ingrese Descripcion de Categoria" maxlength="150">
+            <i class="formulario__validacion-estado  fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">Solo se aceptan letras</p>
+        </div>
+
+        <!-- Grupo de Autor -->
+        <div class="form__group" id="grupo__autor">
+          <label for="autor" class="formulario__label">Autor</label>
+          <div class="formulario__grupo-input">
+            <input type="text" class="formulario__input" id="autor" name="autor" placeholder="Ingrese Autor del Libro" maxlength="100">
+            <i class="formulario__validacion-estado  fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">Ingrese solo letras no caracteres especiales</p>
+        </div>
+
+        <!-- Grupo de Nacionalidad -->
+        <div class="form__group" id="grupo__nacionalidad">
+          <label for="nacionalidad" class="formulario__label">Nacionalidad</label>
+          <div class="formulario__grupo-input">
+            <input type="text" class="formulario__input" id="nacionalidad" name="nacionalidad"
+              placeholder="Ingrese Nacionalidad del autor" maxlength="100">
+            <i class="formulario__validacion-estado  fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">Solo se aceptan letras no caracteres especiales, ni numeros</p>
+        </div>
+  
+        <!-- Grupo de Premios -->
+        <div class="form__group" id="grupo__premios">
+          <label for="premios" class="formulario__label">Premios</label>
+          <div class="formulario__grupo-input">
+            <input type="text" class="formulario__input" id="premios" name="premios"
+              placeholder="Ingrese Premios del Autor" maxlength="100">
+            <i class="formulario__validacion-estado  fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">Solo se aceptan letras no caracteres especiales</p>
+        </div>
+
+        <!-- Grupo de Ranking -->
+        <div class="form__group" id="grupo__ranking">
+          <label for="ranking" class="formulario__label">Clasificación</label>
+          <div class="formulario__grupo-input">
+            <input type="text" class="formulario__input" id="ranking" name="ranking"
+              placeholder="Ingrese clasificación del Autor" maxlength="100">
+            <i class="formulario__validacion-estado  fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">Solo se aceptan letras no caracteres especiales</p>
+        </div>
+
+
+
+        <div class="formulario__mensaje" id="formulario__mensaje">
+          <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Porfavor rellenar todos los campos del formulario
+            correctamente</p>
+        </div>
+
+
+
+
+        <!-- boton Registrar-->
+<br>
+        <div class="formulario__grupo formulario__grupo-btn-enviar">
+          <button type="submit" id="save" class="formulario__btn btn btn-primary">Registrar Libro</button>
+          <br>
+          <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Libro Registrado exitosamente</p>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+
+
+      </form>
+
+
+
+      <!--quitar -->
+    </div>
+    <div class="card-footer">Footer</div>
+  </div>
+  <!--quitar -->
+</div>
+
+
+
+<!--final pagina registrar Libros-->

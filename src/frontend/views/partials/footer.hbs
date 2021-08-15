@@ -1,0 +1,70 @@
+  <!-- Main Footer -->
+  <footer class="main-footer">
+    <!-- To the right -->
+    <div class="float-right d-none d-sm-inline">
+      Anything you want
+    </div>
+    <!-- Default to the left -->
+    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+  </footer>
+</div>
+<!-- ./wrapper -->
+
+<!-- REQUIRED SCRIPTS -->
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="./js/adminlte.min.js"></script>
+
+
+<!-- Biblioteca -->
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.0.2/dist/sweetalert2.all.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap5.min.js"></script>   
+
+<!-- reportes -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.25/js/dataTables.bootstrap5.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/buttons/1.7.1/js/dataTables.buttons.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/buttons/1.7.1/js/buttons.bootstrap5.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/buttons/1.7.1/js/buttons.html5.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/buttons/1.7.1/js/buttons.print.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/responsive/2.2.9/js/dataTables.responsive.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/responsive/2.2.9/js/responsive.bootstrap5.js"></script>
+
+
+{{#if registroCalificaciones}}
+  <script src="../js/registro_calificaciones/calificaciones.js"></script>
+{{/if}}
+
+ 
+
+<!-- llamado a API Registrar -->
+{{#if bibliotecaVirtual}}
+  <script src="../js/biblioteca_virtual/registrar.js"></script>
+{{/if}}
+
+<!-- llamado a API Consultar -->
+{{#if bibliotecaVirtualConsultar}}
+  <script src="/js/biblioteca_virtual/consultar.js"></script>
+{{/if}}
+<!-- llamado a API Descargar -->
+{{#if bibliotecaVirtualDescargar}}
+  <script src="../js/biblioteca_virtual/descargar.js"></script>
+{{/if}}
+<!-- Validacion -->
+{{#if bibliotecaVirtual}}
+  <script src="../js/biblioteca_virtual/validacion.js"></script>
+{{/if}}
+{{#if bibliotecaVirtualMantenimiento}}
+  <script src="../js/biblioteca_virtual/mantenimiento.js"></script>
+{{/if}}
+
+</body>
+</html> 

@@ -1,0 +1,165 @@
+<!-- Content Header (Page header) -->
+<div class="content-header">
+  <div class="container-fluid">
+    <div class="row mb-2">
+      <div class="col-sm-6">
+        <h1 class="m-0"></h1>
+      </div>
+      <div class="col-sm-6">
+        <ol class="breadcrumb float-sm-right">
+          <li class="breadcrumb-item"><a href="/">Inicio</a></li>
+          <li class="breadcrumb-item active">Biblioteca Virtual</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<section class="content">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <!-- Default box -->
+        <div class="card">
+          <div class="card-header">
+            <h3 class="card-title">Biblioteca Virtual</h3>
+
+            <div class="card-tools">
+              <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
+                <i class="fas fa-minus"></i>
+              </button>
+            </div>
+          </div>
+
+
+
+    
+
+                <div class="table-responsive">
+                  <table id="tablaLibros" class="table table-bordered table-striped">
+                    <thead>
+                      <tr class='btn-danger text-white font-weight-bold'>
+                        <th>ID</th>
+                        <th>ISBN</th>
+                        <th>Titulo</th>
+                        <th>Edicion</th>
+                        <th>Descripcion Libro</th>
+                        <th>Img</th>
+                        <th>Pdf</th>
+                        <th>Idioma</th>
+                        <th>Autor</th>
+                        <th>Nacionalidad</th>
+                        <th>Premios</th>
+                        <th>Ranking</th>
+                        <th>Categoria</th>
+                        <th>Descripcion</th>
+                        <th>Editorial</th>
+                        <th class='text-center'>Acciones</th>
+                      </tr>
+                    </thead>
+                    <tbody id="datoslibro"> 
+
+                    </tbody>
+                  </table>
+                </div>
+
+          <!--Modal para CRUD-->
+          <div id="modalCRUD" data-backdrop="static"  data-keyboard="false" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <!--Modal Encabezado-->
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel"></h5>
+                </div>
+                <form id="formLibros">
+                  <!--Modal Cuerpo-->
+
+                  <div class="modal-body">
+                    <input id="id_libro" hidden>
+                    
+                    <!--Dato ISBN-->
+                    <label for="" class="col-form-label">ISBN</label>
+                    <input id="isbn" type="number" class="form-control" >
+
+                    <!--Dato TITULO-->
+                    <label for="" class="col-form-label">Titulo</label>
+                    <input id="titulo" type="text" class="form-control">
+
+                    <!--Dato EDICION-->
+                    <label for="" class="col-form-label">Edición</label>
+                    <input id="edicion" type="text" class="form-control">
+
+                    <!--Dato DESCRIPCION LIBRO-->
+                    <label for="" class="col-form-label">Descripción de libro</label>
+                    <input id="descripcionl" type="text" class="form-control">
+
+                    <!--Dato IMAGEN-->
+                    <label for="" class="col-form-label">Imagen</label>
+                    <input id="img" type="text" class="form-control">
+
+                    <!--Dato PDF-->
+                    <label for="" class="col-form-label">Pdf</label>
+                    <input id="pdf_new" type="text" class="form-control">
+
+                    <!--Dato IDIOMA-->
+                    <label for="" class="col-form-label">Idioma</label>
+                    <input id="idioma" type="text" class="form-control">
+
+                    <!--Dato AUTOR-->
+                    <label for="" class="col-form-label">Autor</label>
+                    <input id="autor" type="text" class="form-control">
+
+                    <!--Dato NACIONALIDAD-->
+                    <label for="" class="col-form-label">Nacionalidad</label>
+                    <input id="nacionalidad" type="text" class="form-control">
+
+                    <!--Dato PREMIOS-->
+                    <label for="" class="col-form-label">Premios</label>
+                    <input id="premios" type="text" class="form-control">
+
+                    <!--Dato RANKING-->
+                    <label for="" class="col-form-label">Clasificación</label>
+                    <input id="ranking" type="text" class="form-control">
+
+                    <!--Dato CATEGORIA-->
+                    <label for="" class="col-form-label">Categoria</label>
+                    <input id="categoria" type="text" class="form-control">
+
+                    <!--Dato DESCRIPCION CATEGORIA-->
+                    <label for="" class="col-form-label">Descripción de Categoria</label>
+                    <input id="descripcionc" type="text" class="form-control">
+
+                    <!--Dato EDITORIAL-->
+                    <label for="" class="col-form-label">Editorial</label>
+                    <input id="editorial" type="text" class="form-control">
+
+
+                  </div>
+                  <!--Modal Pie de Pagina-->
+                  <div class="modal-footer">
+                    <button type="button" id="btnCancelar" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button type="submit" id="btnGuardar" class="btn btn-dark">Guardar</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+    
+          <!-- /.card-body -->
+          <div class="card-footer">
+            Footer
+          </div>
+          <!-- /.card-footer-->
+        </div>
+
+        <!-- /.card -->
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
